@@ -24,7 +24,7 @@ let input = i.Split '\n'
             |> Array.map (fun x ->
                 let s = Regex.Replace(x, @"\s+", " ")
                 s.Split ' '
-                |> Array.map(fun y -> y |> int))
+                |> Array.map int)
 
 // Part 1
 let ans = 
