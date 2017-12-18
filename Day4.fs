@@ -1,9 +1,8 @@
-open System
-
-let input = 
-    let i = System.IO.File.ReadLines "input.txt"    
-    i.Split '\n'
-    |> Array.map (fun x -> x.Split ' ')
+let i = "oaoe rxeq vssdqtu xrk cjv yaoqp loo
+mveua dogbam szydvri hyzk lbega abzqw xwjn wniug kwbre"
+let input = i.Split '\n'
+            |> Array.map (fun x ->
+                x.Split ' ')
 
 let filterFunc elem = 
     let a = Array.length elem
